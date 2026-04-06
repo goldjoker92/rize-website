@@ -25,7 +25,9 @@ function ProximoJoinContent() {
   const [countdown, setCountdown] = useState(COUNTDOWN_START);
   const [phase, setPhase] = useState<'reading' | 'opening' | 'fallback'>('reading');
 
-  const deepLink = `vigiapp://proximo/accept?code=${code}`;
+  // Intent URL Android — ouvre l'app si installée, sinon Play Store automatiquement
+  const intentUrl = `intent://proximo/accept?code=${code}#Intent;scheme=vigiapp;package=com.guigui92.vigiapp;S.browser_fallback_url=${encodeURIComponent(PLAY_STORE_URL)};end`;
+  const deepLink = intentUrl;
 
   // Compte à rebours smooth
   useEffect(() => {
