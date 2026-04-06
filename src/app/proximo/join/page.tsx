@@ -6,7 +6,7 @@
 // URL : https://rize-website-steel.vercel.app/proximo/join?code=PRXABC1234
 // ----------------------------------------------------------------------------
 // Flow :
-//   1. Affiche la page pendant 4 secondes (smooth)
+//   1. Affiche la page pendant 60 secondes (smooth)
 //   2. Tente le deep link vigiapp://proximo/accept?code=XXX
 //   3. Si VigiApp installé → ouvre directement
 //   4. Si non installé → fallback Play Store après 2s
