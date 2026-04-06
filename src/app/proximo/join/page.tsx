@@ -17,7 +17,7 @@ import { useSearchParams } from 'next/navigation';
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.guigui92.vigiapp';
 const PLAY_STORE_SEARCH = 'https://play.google.com/store/search?q=VigiApp&c=apps';
-const COUNTDOWN_START = 10;
+const COUNTDOWN_START = 20;
 
 function ProximoJoinContent() {
   const searchParams = useSearchParams();
